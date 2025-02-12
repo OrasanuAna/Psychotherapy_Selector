@@ -1,0 +1,68 @@
+/* style.css */
+
+/* Stil pentru body */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Titlul principal */
+h1 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+/* Containerul checkbox-urilor */
+div:first-of-type {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Stil pentru checkbox-uri */
+input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #4caf50;
+}
+
+/* Stil pentru mesaj */
+#message {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border: 1px solid #3e8e41;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Responsivitate pentru ecrane mici */
+@media (max-width: 480px) {
+  div:first-of-type {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #message {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
