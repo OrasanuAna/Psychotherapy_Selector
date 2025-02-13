@@ -5,6 +5,11 @@ const checkbox3 = document.getElementById("checkbox3");
 const checkbox4 = document.getElementById("checkbox4");
 const messageDiv = document.getElementById("message");
 
+// checkbox1 = Psihoterapie
+// checkbox2 = Dezvoltare Personală
+// checkbox3 = Consultanță Educațională
+// checkbox4 = Consiliere Vocațională
+
 // Funcție pentru afișarea mesajelor
 function updateMessage() {
   let message = "";
@@ -43,7 +48,7 @@ function updateMessage() {
     message = "Pachet Combinat Life of Pi";
   } else if (checkbox2.checked && checkbox3.checked) {
     message =
-      "Dezvoltare Personală și Consultanță Educațională: Pachet Combinat Life of Pi";
+      "Pachet Simplu Dezvoltare Personală, Pachet Simplu Consultanță Educațională";
   } else if (checkbox2.checked && checkbox4.checked) {
     message = "Pachet Combinat The Little Prince";
   } else if (checkbox3.checked && checkbox4.checked) {
@@ -56,9 +61,9 @@ function updateMessage() {
   } else if (checkbox2.checked) {
     message = "Dezvoltare Personală";
   } else if (checkbox3.checked) {
-    message = "Consultanță Educațională selectată!";
+    message = "Consultanță Educațională";
   } else if (checkbox4.checked) {
-    message = "Consiliere Vocațională activată!";
+    message = "Consiliere Vocațională";
   }
 
   // Dacă niciun checkbox nu este bifat
