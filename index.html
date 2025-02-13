@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkbox Dynamic Rendering</title>
+    <title>Checkbox Dynamic Cards</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Selectați casetele</h1>
     <div>
       <input type="checkbox" id="checkbox1" value="Psihoterapie" />
-      Psihoterapie<br />
-      <input type="checkbox" id="checkbox2" value="Dezvoltare Personala" />
-      Dezvoltare Personală<br />
-      <input type="checkbox" id="checkbox3" value="Consultanta Educationala" />
-      Consultanță Educațională<br />
-      <input type="checkbox" id="checkbox4" value="Consiliere Vocationala" />
-      Consiliere Vocațională<br />
+      <label for="checkbox1">Psihoterapie</label><br />
+      <input type="checkbox" id="checkbox2" value="Dezvoltare Personală" />
+      <label for="checkbox2">Dezvoltare Personală</label><br />
+      <input type="checkbox" id="checkbox3" value="Consultanță Educațională" />
+      <label for="checkbox3">Consultanță Educațională</label><br />
+      <input type="checkbox" id="checkbox4" value="Consiliere Vocațională" />
+      <label for="checkbox4">Consiliere Vocațională</label><br />
     </div>
-    <div class="message" id="message"></div>
+    <div id="card-container"></div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,82 +1,204 @@
 // Referințe la elemente
-const checkbox1 = document.getElementById("checkbox1");
-const checkbox2 = document.getElementById("checkbox2");
-const checkbox3 = document.getElementById("checkbox3");
-const checkbox4 = document.getElementById("checkbox4");
-const messageDiv = document.getElementById("message");
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const cardContainer = document.getElementById("card-container");
 
-// checkbox1 = Psihoterapie
-// checkbox2 = Dezvoltare Personală
-// checkbox3 = Consultanță Educațională
-// checkbox4 = Consiliere Vocațională
+// Funcție pentru generarea cardurilor
+function generateCards() {
+  // Ștergem conținutul anterior al containerului
+  cardContainer.innerHTML = "";
 
-// Funcție pentru afișarea mesajelor
-function updateMessage() {
-  let message = "";
+  // Obținem starea checkbox-urilor
+  const checkedCheckboxes = Array.from(checkboxes).filter(
+    (checkbox) => checkbox.checked
+  );
 
-  // Verifică combinația completă (toate checkbox-urile bifate)
-  if (
-    checkbox1.checked &&
-    checkbox2.checked &&
-    checkbox3.checked &&
-    checkbox4.checked
+  // Logica pentru cazuri
+
+  // Cazul 4: Toate checkbox-urile bifate
+  if (checkedCheckboxes.length === 4) {
+    createCard(
+      "Pachet Combinat The Tree of Life",
+      "Detalii",
+      "the-tree-of-life.html"
+    );
+    createCard(
+      "Pachet Combinat The Looking Glass",
+      "Detalii",
+      "the-looking-glass.html"
+    );
+  }
+  // Combinatii de 3 checkbox-uri
+  else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox3") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox4")
   ) {
-    message =
-      "Pachet Combinat The Tree of Life, Pachet Combinat The Looking Glass";
+    createCard(
+      "Pachet Combinat The Tree of Life",
+      "Detalii",
+      "the-tree-of-life.html"
+    );
+    createCard(
+      "Pachet Combinat The Alchemist",
+      "Detalii",
+      "the-alchemist.html"
+    );
+    createCard("Pachet Combinat Life of Pi", "Detalii", "life-of-pi.html");
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox3") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox4")
+  ) {
+    createCard(
+      "Pachet Combinat The Looking Glass",
+      "Detalii",
+      "the-looking-glass.html"
+    );
+    createCard(
+      "Pachet Combinat The Little Prince",
+      "Detalii",
+      "the-little-prince.html"
+    );
+    createCard(
+      "Pachet Combinat The Alchemist",
+      "Detalii",
+      "the-alchemist.html"
+    );
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox3")
+  ) {
+    createCard("Pachet Simplu Psihoterapie", "Detalii", "psihoterapie.html");
+    createCard(
+      "Pachet Simplu Dezvoltare Personală",
+      "Detalii",
+      "dezvoltare-personala.html"
+    );
+    createCard(
+      "Pachet Simplu Consultanță Educațională",
+      "Detalii",
+      "consultanta-educationala.html"
+    );
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox4")
+  ) {
+    createCard("Pachet Combinat Life of Pi", "Detalii", "life-of-pi.html");
+    createCard(
+      "Pachet Combinat The Little Prince",
+      "Detalii",
+      "the-little-prince.html"
+    );
   }
-  // Verifică combinațiile de câte trei opțiuni
-  else if (checkbox1.checked && checkbox2.checked && checkbox3.checked) {
-    message =
-      "Pachet Simplu Psihoterapie, Pachet Simplu Dezvoltare Personală, Pachet Simplu Consultanță Educațională";
-  } else if (checkbox1.checked && checkbox2.checked && checkbox4.checked) {
-    message = "Pachet Combinat Life of Pi, Pachet Combinat The Little Prince";
-  } else if (checkbox1.checked && checkbox3.checked && checkbox4.checked) {
-    message =
-      "Pachet Combinat The Tree of Life, Pachet Combinat The Alchemist, Pachet Combinat Life of Pi";
-  } else if (checkbox2.checked && checkbox3.checked && checkbox4.checked) {
-    message =
-      "Pachet Combinat The Looking Glass, Pachet Combinat The Little Prince, Pachet Combinat The Alchemist";
+  // Combinatii de 2 checkbox-uri
+  else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox2")
+  ) {
+    createCard("Pachet Simplu Psihoterapie", "Detalii", "psihoterapie.html");
+    createCard(
+      "Pachet Simplu Dezvoltare Personală",
+      "Detalii",
+      "dezvoltare-personala.html"
+    );
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox3")
+  ) {
+    createCard("Pachet Simplu Psihoterapie", "Detalii", "psihoterapie.html");
+    createCard(
+      "Pachet Simplu Consultanță Educațională",
+      "Detalii",
+      "consultanta-educationala.html"
+    );
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox4")
+  ) {
+    createCard("Pachet Combinat Life of Pi", "Detalii", "life-of-pi.html");
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox3")
+  ) {
+    createCard(
+      "Pachet Simplu Dezvoltare Personală",
+      "Detalii",
+      "dezvoltare-personala.html"
+    );
+    createCard(
+      "Pachet Simplu Consultanță Educațională",
+      "Detalii",
+      "consultanta-educationala.html"
+    );
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox4")
+  ) {
+    createCard(
+      "Pachet Combinat The Little Prince",
+      "Detalii",
+      "the-little-prince.html"
+    );
+  } else if (
+    checkedCheckboxes.some((cb) => cb.id === "checkbox3") &&
+    checkedCheckboxes.some((cb) => cb.id === "checkbox4")
+  ) {
+    createCard(
+      "Pachet Combinat The Alchemist",
+      "Detalii",
+      "the-alchemist.html"
+    );
   }
-
-  // Verifică combinațiile de câte două opțiuni
-  else if (checkbox1.checked && checkbox2.checked) {
-    message = "Pachet Simplu Psihoterapie, Pachet Simplu Dezvoltare Personală";
-  } else if (checkbox1.checked && checkbox3.checked) {
-    message =
-      "Pachet Simplu Dezvoltare Personală, Pachet Simplu Consultanță Educațională";
-  } else if (checkbox1.checked && checkbox4.checked) {
-    message = "Pachet Combinat Life of Pi";
-  } else if (checkbox2.checked && checkbox3.checked) {
-    message =
-      "Pachet Simplu Dezvoltare Personală, Pachet Simplu Consultanță Educațională";
-  } else if (checkbox2.checked && checkbox4.checked) {
-    message = "Pachet Combinat The Little Prince";
-  } else if (checkbox3.checked && checkbox4.checked) {
-    message = "Pachet Combinat The Alchemist";
+  // Cazul 1: Un singur checkbox bifat
+  else if (checkedCheckboxes.length === 1) {
+    const singlePage = getPageForCheckbox(checkedCheckboxes[0].id);
+    createCard(checkedCheckboxes[0].value, "Detalii", singlePage);
   }
-
-  // Verifică opțiunile individuale
-  else if (checkbox1.checked) {
-    message = "Psihoterapie";
-  } else if (checkbox2.checked) {
-    message = "Dezvoltare Personală";
-  } else if (checkbox3.checked) {
-    message = "Consultanță Educațională";
-  } else if (checkbox4.checked) {
-    message = "Consiliere Vocațională";
-  }
-
-  // Dacă niciun checkbox nu este bifat
-  if (message === "") {
-    message = "Nicio opțiune selectată.";
-  }
-
-  // Actualizează mesajul în div
-  messageDiv.textContent = message;
 }
 
-// Adaugă evenimente pentru fiecare checkbox
-checkbox1.addEventListener("change", updateMessage);
-checkbox2.addEventListener("change", updateMessage);
-checkbox3.addEventListener("change", updateMessage);
-checkbox4.addEventListener("change", updateMessage);
+// Funcție pentru a obține pagina HTML asociată unui checkbox
+function getPageForCheckbox(id) {
+  switch (id) {
+    case "checkbox1":
+      return "psihoterapie.html";
+    case "checkbox2":
+      return "dezvoltare-personala.html";
+    case "checkbox3":
+      return "consultanta-educationala.html";
+    case "checkbox4":
+      return "consiliere-vocationala.html";
+    default:
+      return "#";
+  }
+}
+
+// Funcție pentru crearea unui card
+function createCard(title, buttonText, link) {
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  const cardTitle = document.createElement("h2");
+  cardTitle.textContent = title;
+
+  const button = document.createElement("button");
+  button.textContent = buttonText;
+
+  // Setează linkul ca un atribut de date
+  button.dataset.link = link;
+
+  // Adaugă eveniment pentru redirecționare
+  button.addEventListener("click", () => {
+    window.location.href = button.dataset.link;
+  });
+
+  card.appendChild(cardTitle);
+  card.appendChild(button);
+  cardContainer.appendChild(card);
+}
+
+// Adaugă evenimente pentru checkbox-uri
+checkboxes.forEach((checkbox) =>
+  checkbox.addEventListener("change", generateCards)
+);
