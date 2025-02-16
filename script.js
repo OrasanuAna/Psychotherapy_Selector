@@ -19,12 +19,12 @@ function generateCards() {
     createCard(
       "Pachet Combinat The Tree of Life",
       "Detalii",
-      "the-tree-of-life.html"
+      "https://fig-tree-institute.com/the-tree-of-life/"
     );
     createCard(
       "Pachet Combinat The Looking Glass",
       "Detalii",
-      "the-looking-glass.html"
+      "https://fig-tree-institute.com/the-looking-glass/"
     );
   }
   // Combinatii de 3 checkbox-uri
@@ -36,14 +36,18 @@ function generateCards() {
     createCard(
       "Pachet Combinat The Tree of Life",
       "Detalii",
-      "the-tree-of-life.html"
+      "https://fig-tree-institute.com/the-tree-of-life/"
     );
     createCard(
       "Pachet Combinat The Alchemist",
       "Detalii",
-      "the-alchemist.html"
+      "https://fig-tree-institute.com/the-alchemist/"
     );
-    createCard("Pachet Combinat Life of Pi", "Detalii", "life-of-pi.html");
+    createCard(
+      "Pachet Combinat Life of Pi",
+      "Detalii",
+      "https://fig-tree-institute.com/life-of-pi/"
+    );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox3") &&
@@ -52,44 +56,52 @@ function generateCards() {
     createCard(
       "Pachet Combinat The Looking Glass",
       "Detalii",
-      "the-looking-glass.html"
+      "https://fig-tree-institute.com/the-looking-glass/"
     );
     createCard(
       "Pachet Combinat The Little Prince",
       "Detalii",
-      "the-little-prince.html"
+      "https://fig-tree-institute.com/the-little-prince/"
     );
     createCard(
       "Pachet Combinat The Alchemist",
       "Detalii",
-      "the-alchemist.html"
+      "https://fig-tree-institute.com/the-alchemist/"
     );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox3")
   ) {
-    createCard("Pachet Simplu Psihoterapie", "Detalii", "psihoterapie.html");
+    createCard(
+      "Pachet Simplu Psihoterapie",
+      "Detalii",
+      "https://fig-tree-institute.com/services-psychotherapy/"
+    );
     createCard(
       "Pachet Simplu Dezvoltare Personală",
       "Detalii",
-      "dezvoltare-personala.html"
+      "https://fig-tree-institute.com/personal-development/"
     );
     createCard(
       "Pachet Simplu Consultanță Educațională",
       "Detalii",
-      "consultanta-educationala.html"
+      "https://fig-tree-institute.com/educational-consulting/"
     );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox4")
   ) {
-    createCard("Pachet Combinat Life of Pi", "Detalii", "life-of-pi.html");
+    createCard(
+      "Pachet Combinat Life of Pi",
+      "Detalii",
+      "https://fig-tree-institute.com/life-of-pi/"
+    );
     createCard(
       "Pachet Combinat The Little Prince",
       "Detalii",
-      "the-little-prince.html"
+      "https://fig-tree-institute.com/the-little-prince/"
     );
   }
   // Combinatii de 2 checkbox-uri
@@ -97,27 +109,39 @@ function generateCards() {
     checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox2")
   ) {
-    createCard("Pachet Simplu Psihoterapie", "Detalii", "psihoterapie.html");
+    createCard(
+      "Pachet Simplu Psihoterapie",
+      "Detalii",
+      "https://fig-tree-institute.com/services-psychotherapy/"
+    );
     createCard(
       "Pachet Simplu Dezvoltare Personală",
       "Detalii",
-      "dezvoltare-personala.html"
+      "https://fig-tree-institute.com/personal-development/"
     );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox3")
   ) {
-    createCard("Pachet Simplu Psihoterapie", "Detalii", "psihoterapie.html");
+    createCard(
+      "Pachet Simplu Psihoterapie",
+      "Detalii",
+      "https://fig-tree-institute.com/services-psychotherapy/"
+    );
     createCard(
       "Pachet Simplu Consultanță Educațională",
       "Detalii",
-      "consultanta-educationala.html"
+      "https://fig-tree-institute.com/educational-consulting/"
     );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox1") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox4")
   ) {
-    createCard("Pachet Combinat Life of Pi", "Detalii", "life-of-pi.html");
+    createCard(
+      "Pachet Combinat Life of Pi",
+      "Detalii",
+      "https://fig-tree-institute.com/life-of-pi/"
+    );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
     checkedCheckboxes.some((cb) => cb.id === "checkbox3")
@@ -125,12 +149,12 @@ function generateCards() {
     createCard(
       "Pachet Simplu Dezvoltare Personală",
       "Detalii",
-      "dezvoltare-personala.html"
+      "https://fig-tree-institute.com/personal-development/"
     );
     createCard(
       "Pachet Simplu Consultanță Educațională",
       "Detalii",
-      "consultanta-educationala.html"
+      "https://fig-tree-institute.com/educational-consulting/"
     );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox2") &&
@@ -139,7 +163,7 @@ function generateCards() {
     createCard(
       "Pachet Combinat The Little Prince",
       "Detalii",
-      "the-little-prince.html"
+      "https://fig-tree-institute.com/the-little-prince/"
     );
   } else if (
     checkedCheckboxes.some((cb) => cb.id === "checkbox3") &&
@@ -148,7 +172,7 @@ function generateCards() {
     createCard(
       "Pachet Combinat The Alchemist",
       "Detalii",
-      "the-alchemist.html"
+      "https://fig-tree-institute.com/the-alchemist/"
     );
   }
   // Cazul 1: Un singur checkbox bifat
@@ -162,13 +186,13 @@ function generateCards() {
 function getPageForCheckbox(id) {
   switch (id) {
     case "checkbox1":
-      return "psihoterapie.html";
+      return "https://fig-tree-institute.com/services-psychotherapy/";
     case "checkbox2":
-      return "dezvoltare-personala.html";
+      return "https://fig-tree-institute.com/personal-development/";
     case "checkbox3":
-      return "consultanta-educationala.html";
+      return "https://fig-tree-institute.com/educational-consulting/";
     case "checkbox4":
-      return "consiliere-vocationala.html";
+      return "https://fig-tree-institute.com/vocational-counseling/";
     default:
       return "#";
   }
