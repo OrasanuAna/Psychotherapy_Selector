@@ -287,9 +287,9 @@ function showModal(title, details, link) {
   modal.querySelector("#modalTitle").textContent = title;
   modal.querySelector("#modalDetails").textContent = details;
   modal.querySelector("#readMore").onclick = () =>
-    (window.location.href = link);
+    (window.top.location.href = link);
   modal.querySelector("#bookCall").onclick = () =>
-    (window.location.href = "https://fig-tree-institute.com/book-a-call/");
+    (window.top.location.href = "https://fig-tree-institute.com/book-a-call/");
 
   modal.style.display = "block";
 }
