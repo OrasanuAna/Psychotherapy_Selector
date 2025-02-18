@@ -14,13 +14,13 @@ function generateCards() {
   // Determine output based on combinations
   if (selectedIds.length === 4) {
     createCard(
-      "Pachet Combinat The Tree of Life",
+      "The Tree of Life",
       "https://fig-tree-institute.com/the-tree-of-life/",
       "A holistic approach combining therapy, personal growth, education, and career counseling.",
       getBackgroundImage("tree_of_life")
     );
     createCard(
-      "Pachet Combinat The Looking Glass",
+      "The Looking Glass",
       "https://fig-tree-institute.com/the-looking-glass/",
       "Explore self-discovery through therapy and personal development.",
       getBackgroundImage("looking_glass")
@@ -32,19 +32,19 @@ function generateCards() {
       selectedIds.includes("checkbox3")
     ) {
       createCard(
-        "Pachet Simplu Dezvoltare Personală",
+        "Personal Development",
         "https://fig-tree-institute.com/personal-development/",
         "Boost confidence, goal-setting, and personal growth.",
         getBackgroundImage("personal_development")
       );
       createCard(
-        "Pachet Simplu Consultanță Educațională",
+        "Educational Counseling",
         "https://fig-tree-institute.com/educational-consulting/",
         "Guidance for career choices and education plans.",
         getBackgroundImage("educational_consulting")
       );
       createCard(
-        "Pachet Simplu Psihoterapie",
+        "Psychotherapy",
         "https://fig-tree-institute.com/services-psychotherapy/",
         "Therapy sessions to improve emotional well-being and mental health.",
         getBackgroundImage("psychotherapy")
@@ -55,13 +55,13 @@ function generateCards() {
       selectedIds.includes("checkbox4")
     ) {
       createCard(
-        "Pachet Combinat Life of Pi",
+        "Life of Pi",
         "https://fig-tree-institute.com/life-of-pi/",
         "A unique mix of therapy and career guidance.",
         getBackgroundImage("life_of_pi")
       );
       createCard(
-        "Pachet Combinat The Little Prince",
+        "The Little Prince",
         "https://fig-tree-institute.com/the-little-prince/",
         "Rediscover sensitivity and imagination.",
         getBackgroundImage("little_prince")
@@ -72,19 +72,19 @@ function generateCards() {
       selectedIds.includes("checkbox4")
     ) {
       createCard(
-        "Pachet Combinat The Tree of Life",
+        "The Tree of Life",
         "https://fig-tree-institute.com/the-tree-of-life/ ",
         "A unique mix of therapy and career guidance.",
         getBackgroundImage("tree_of_life")
       );
       createCard(
-        "Pachet Combinat The Alchemist",
+        "The Alchemist",
         "https://fig-tree-institute.com/the-alchemist/",
         "A unique mix of therapy and career guidance.",
         getBackgroundImage("the_alchemist")
       );
       createCard(
-        "Pachet Combinat Life of Pi",
+        "Life of Pi",
         "https://fig-tree-institute.com/life-of-pi/",
         "Rediscover sensitivity and imagination.",
         getBackgroundImage("life_of_pi")
@@ -95,19 +95,19 @@ function generateCards() {
       selectedIds.includes("checkbox4")
     ) {
       createCard(
-        "Pachet Combinat The Looking Glass",
+        "The Looking Glass",
         "https://fig-tree-institute.com/the-looking-glass/",
         "Comprehensive transformation through therapy and personal growth.",
         getBackgroundImage("looking_glass")
       );
       createCard(
-        "Pachet Combinat The Little Prince",
+        "The Little Prince",
         "https://fig-tree-institute.com/the-little-prince/",
         "Find a new perspective through self-discovery.",
         getBackgroundImage("little_prince")
       );
       createCard(
-        "Pachet Combinat The Alchemist",
+        "The Alchemist",
         "https://fig-tree-institute.com/the-alchemist/",
         "A unique mix of therapy and career guidance.",
         getBackgroundImage("the_alchemist")
@@ -119,13 +119,13 @@ function generateCards() {
       selectedIds.includes("checkbox2")
     ) {
       createCard(
-        "Pachet Simplu Psihoterapie",
+        "Psychotherapy",
         "https://fig-tree-institute.com/services-psychotherapy/",
         "Focused therapy sessions for mental well-being.",
         getBackgroundImage("psychotherapy")
       );
       createCard(
-        "Pachet Simplu Dezvoltare Personală",
+        "Personal Development",
         "https://fig-tree-institute.com/personal-development/",
         "Enhance confidence and personal growth.",
         getBackgroundImage("personal_development")
@@ -135,13 +135,13 @@ function generateCards() {
       selectedIds.includes("checkbox3")
     ) {
       createCard(
-        "Pachet Simplu Psihoterapie",
+        "Psychotherapy",
         "https://fig-tree-institute.com/services-psychotherapy/",
         "Focused therapy sessions for mental well-being.",
         getBackgroundImage("psychotherapy")
       );
       createCard(
-        "Pachet Simplu Consultanță Educațională",
+        "Educational Counseling",
         "https://fig-tree-institute.com/educational-consulting/",
         "Career and education guidance.",
         getBackgroundImage("educational_consulting")
@@ -151,7 +151,7 @@ function generateCards() {
       selectedIds.includes("checkbox4")
     ) {
       createCard(
-        "Pachet Combinat Life of Pi",
+        "Life of Pi",
         "https://fig-tree-institute.com/life-of-pi/",
         "A unique mix of therapy and career counseling.",
         getBackgroundImage("life_of_pi")
@@ -161,14 +161,14 @@ function generateCards() {
       selectedIds.includes("checkbox3")
     ) {
       createCard(
-        "Pachet Simplu Dezvoltare Personala",
+        "Dezvoltare Personala",
         "https://fig-tree-institute.com/personal-development/",
         "A unique mix of therapy and career counseling.",
         getBackgroundImage("personal_development")
       );
 
       createCard(
-        "Pachet Simplu Consultantă Educațională",
+        "Consultantă Educațională",
         "https://fig-tree-institute.com/educational-consulting/",
         "A unique mix of therapy and career counseling.",
         getBackgroundImage("educational_consulting")
@@ -178,7 +178,7 @@ function generateCards() {
       selectedIds.includes("checkbox4")
     ) {
       createCard(
-        "Pachet Combinat The Little Prince",
+        "The Little Prince",
         "https://fig-tree-institute.com/the-little-prince/",
         "A unique mix of therapy and career counseling.",
         getBackgroundImage("little_prince")
@@ -188,7 +188,7 @@ function generateCards() {
       selectedIds.includes("checkbox4")
     ) {
       createCard(
-        "Pachet Combinat The Alchemist",
+        "The Alchemist",
         "https://fig-tree-institute.com/the-alchemist/",
         "A unique mix of therapy and career counseling.",
         getBackgroundImage("the_alchemist")
@@ -197,39 +197,92 @@ function generateCards() {
   }
 }
 
-// Function to create a card
 function createCard(title, link, details, bgImage) {
+  // Create the card container
   const card = document.createElement("div");
   card.classList.add("card");
+  card.style.position = "relative"; // Ensures proper positioning
   card.style.backgroundImage = `url('${bgImage}')`;
   card.style.backgroundSize = "cover";
   card.style.backgroundPosition = "center";
   card.style.backgroundRepeat = "no-repeat";
+  card.style.overflow = "hidden"; // Prevents content overflow
 
+  // Create background overlay
+  const backgroundOverlay = document.createElement("div");
+  backgroundOverlay.classList.add("background-overlay");
+  backgroundOverlay.style.position = "absolute";
+  backgroundOverlay.style.top = "0";
+  backgroundOverlay.style.left = "0";
+  backgroundOverlay.style.width = "100%";
+  backgroundOverlay.style.height = "100%";
+  backgroundOverlay.style.background = "rgba(0, 0, 0, 0.4)"; // Dark overlay (adjust opacity as needed)
+  backgroundOverlay.style.zIndex = "0"; // Keeps it behind text
+
+  // Create text overlay (content area)
   const textOverlay = document.createElement("div");
   textOverlay.classList.add("text-overlay");
+  textOverlay.style.position = "relative";
+  textOverlay.style.zIndex = "1"; // Place text above the overlay
+  textOverlay.style.display = "flex";
+  textOverlay.style.flexDirection = "column";
+  textOverlay.style.justifyContent = "center";
+  textOverlay.style.alignItems = "center";
+  textOverlay.style.padding = "20px";
+  textOverlay.style.color = "white"; // Ensures text is visible
 
+  // Create card content container
   const cardContent = document.createElement("div");
   cardContent.classList.add("card-content");
 
+  // Title
   const cardTitle = document.createElement("h2");
   cardTitle.textContent = title;
+  cardTitle.style.marginBottom = "10px";
 
+  // Description
   const description = document.createElement("p");
   description.textContent = details;
 
-  const button = document.createElement("button");
-  button.textContent = "Detalii";
-  button.style.marginTop = "15px";
-  button.addEventListener("click", () => {
-    showModal(title, details, link);
+  // Create Buttons Container
+  const buttonContainer = document.createElement("div");
+  buttonContainer.style.display = "flex";
+  buttonContainer.style.gap = "10px"; // Space between buttons
+
+  // Read More Button
+  const readMoreButton = document.createElement("button");
+  readMoreButton.classList.add("button_primary");
+
+  readMoreButton.textContent = "Explore";
+
+  readMoreButton.style.fontWeight = "bold";
+
+  readMoreButton.addEventListener("click", () => {
+    window.location.href = link; // Redirect to the package page
   });
 
+  // Book a Call Button
+  const bookCallButton = document.createElement("button");
+  bookCallButton.classList.add("book_secondary");
+  bookCallButton.textContent = "Book a Call";
+
+  bookCallButton.addEventListener("click", () => {
+    window.location.href = "https://fig-tree-institute.com/book-a-call/"; // Redirect to the booking page
+  });
+
+  // Append buttons to button container
+  buttonContainer.appendChild(readMoreButton);
+  buttonContainer.appendChild(bookCallButton);
+
+  // Append elements
   cardContent.appendChild(cardTitle);
   cardContent.appendChild(description);
-  cardContent.appendChild(button);
+  cardContent.appendChild(buttonContainer);
   textOverlay.appendChild(cardContent);
-  card.appendChild(textOverlay);
+
+  // Append everything to the card
+  card.appendChild(backgroundOverlay); // Background overlay behind everything
+  card.appendChild(textOverlay); // Text overlay above the background
   cardContainer.appendChild(card);
 }
 

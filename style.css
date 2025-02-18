@@ -74,19 +74,42 @@ input[type="checkbox"] {
 }
 
 /* Detail button */
-.card button {
+.button_primary {
+  background-color: white;
+  margin-top: 15px;
+  color: #627361;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: "Krona One", sans-serif;
+  font-size: 0.85rem;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+
+}
+
+.button_primary:hover {
   background-color: #627361;
+  color: white;
+}
+
+.book_secondary {
+  background-color: #627361;
+  margin-top: 15px;
   color: white;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   font-family: "Krona One", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-.card button:hover {
-  background-color: #505e4c;
+.book_secondary:hover {
+  background-color: white;
+  color: #627361;
 }
+
+
 
 /* MODAL STYLING */
 .modal {
