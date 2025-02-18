@@ -298,7 +298,7 @@ function createCard(title, link, details, bgImage) {
   readMoreButton.style.fontWeight = "bold";
 
   readMoreButton.addEventListener("click", () => {
-    window.location.href = link; // Redirect to the package page
+    window.top.location.href = link; // Redirect to the package page
   });
 
   // Book a Call Button
@@ -307,7 +307,7 @@ function createCard(title, link, details, bgImage) {
   bookCallButton.textContent = "Book a Call";
 
   bookCallButton.addEventListener("click", () => {
-    window.location.href = "https://fig-tree-institute.com/book-a-call/"; // Redirect to the booking page
+    window.top.location.href = "https://fig-tree-institute.com/book-a-call/"; // Redirect to the booking page
   });
 
   // Append buttons to button container
