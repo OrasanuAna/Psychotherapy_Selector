@@ -9,10 +9,22 @@ function generateCards() {
   const checkedCheckboxes = Array.from(checkboxes).filter((cb) => cb.checked);
   const selectedIds = checkedCheckboxes.map((cb) => cb.id);
 
-  if (selectedIds.length === 0) return;
+  // If no checkboxes are selected, show a message
+  if (selectedIds.length === 0) {
+    const message = document.createElement("p");
+    message.textContent =
+      "Please select at least one option to see available packages.";
+    message.classList.add("no-results-message"); // Add styling class
+    cardContainer.appendChild(message);
+    return; // Stop function execution
+  }
+
+  let foundResults = false; // Track if any cards are generated
 
   // Determine output based on combinations
   if (selectedIds.length === 4) {
+    foundResults = true;
+
     createCard(
       "The Tree of Life",
       "https://fig-tree-institute.com/the-tree-of-life/",
@@ -31,6 +43,8 @@ function generateCards() {
       selectedIds.includes("checkbox2") &&
       selectedIds.includes("checkbox3")
     ) {
+      foundResults = true;
+
       createCard(
         "Personal Development",
         "https://fig-tree-institute.com/personal-development/",
@@ -54,6 +68,8 @@ function generateCards() {
       selectedIds.includes("checkbox2") &&
       selectedIds.includes("checkbox4")
     ) {
+      foundResults = true;
+
       createCard(
         "Life of Pi",
         "https://fig-tree-institute.com/life-of-pi/",
@@ -71,6 +87,8 @@ function generateCards() {
       selectedIds.includes("checkbox3") &&
       selectedIds.includes("checkbox4")
     ) {
+      foundResults = true;
+
       createCard(
         "The Tree of Life",
         "https://fig-tree-institute.com/the-tree-of-life/ ",
@@ -94,6 +112,8 @@ function generateCards() {
       selectedIds.includes("checkbox3") &&
       selectedIds.includes("checkbox4")
     ) {
+      foundResults = true;
+
       createCard(
         "The Looking Glass",
         "https://fig-tree-institute.com/the-looking-glass/",
@@ -118,6 +138,8 @@ function generateCards() {
       selectedIds.includes("checkbox1") &&
       selectedIds.includes("checkbox2")
     ) {
+      foundResults = true;
+
       createCard(
         "Psychotherapy",
         "https://fig-tree-institute.com/services-psychotherapy/",
@@ -134,6 +156,8 @@ function generateCards() {
       selectedIds.includes("checkbox1") &&
       selectedIds.includes("checkbox3")
     ) {
+      foundResults = true;
+
       createCard(
         "Psychotherapy",
         "https://fig-tree-institute.com/services-psychotherapy/",
@@ -150,6 +174,8 @@ function generateCards() {
       selectedIds.includes("checkbox1") &&
       selectedIds.includes("checkbox4")
     ) {
+      foundResults = true;
+
       createCard(
         "Life of Pi",
         "https://fig-tree-institute.com/life-of-pi/",
@@ -160,6 +186,8 @@ function generateCards() {
       selectedIds.includes("checkbox2") &&
       selectedIds.includes("checkbox3")
     ) {
+      foundResults = true;
+
       createCard(
         "Dezvoltare Personala",
         "https://fig-tree-institute.com/personal-development/",
@@ -177,6 +205,8 @@ function generateCards() {
       selectedIds.includes("checkbox2") &&
       selectedIds.includes("checkbox4")
     ) {
+      foundResults = true;
+
       createCard(
         "The Little Prince",
         "https://fig-tree-institute.com/the-little-prince/",
@@ -187,6 +217,8 @@ function generateCards() {
       selectedIds.includes("checkbox3") &&
       selectedIds.includes("checkbox4")
     ) {
+      foundResults = true;
+
       createCard(
         "The Alchemist",
         "https://fig-tree-institute.com/the-alchemist/",
@@ -194,6 +226,14 @@ function generateCards() {
         getBackgroundImage("the_alchemist")
       );
     }
+  }
+  // If no results were found, display a message
+  if (!foundResults) {
+    const message = document.createElement("p");
+    message.textContent =
+      "No matching results for your selection. Try a different combination.";
+    message.classList.add("no-results-message"); // Add styling class
+    cardContainer.appendChild(message);
   }
 }
 
@@ -351,3 +391,6 @@ function showModal(title, details, link) {
 checkboxes.forEach((checkbox) =>
   checkbox.addEventListener("change", generateCards)
 );
+
+// Trigger message on page load
+document.addEventListener("DOMContentLoaded", generateCards);
