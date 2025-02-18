@@ -214,7 +214,7 @@ function createCard(title, buttonText, link) {
 
   // Adaugă eveniment pentru redirecționare
   button.addEventListener("click", () => {
-    window.location.href = button.dataset.link;
+    window.top.location.href = button.dataset.link;
   });
 
   card.appendChild(cardTitle);
